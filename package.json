@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "umi dev",
     "build": "umi build",
+    "deploy": "gh-pages -d dist",
     "postinstall": "umi setup",
     "setup": "umi setup",
     "start": "npm run dev"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
+    "gh-pages": "^6.1.1",
     "typescript": "^5.0.3"
   }
 }
