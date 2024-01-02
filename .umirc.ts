@@ -13,9 +13,9 @@ export default defineConfig({
     { path: "/", component: "./Home" },
     // { path: "/docs", component: "docs" },
   ],
-  codeSplitting: {
-    jsStrategy: 'granularChunks',
-  },
+  // codeSplitting: {
+  //   jsStrategy: 'granularChunks',
+  // },
   npmClient: 'npm',
   history: { type: 'hash' },
   hash: true,
