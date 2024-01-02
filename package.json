@@ -1,6 +1,7 @@
 {
   "private": true,
   "author": "满昌 <cx362562@antgroup.com>",
+  "homepage": "https://tanabalu.github.io/项目名称",
   "scripts": {
     "dev": "umi dev",
     "build": "umi build",
