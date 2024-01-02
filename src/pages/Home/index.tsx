@@ -14,7 +14,7 @@ export default function Home() {
     maxCount: 1,
     className: styles.upload,
     beforeUpload(file) {
-      console.log('before', file);
+      console.log('file: ', file);
       setType(file.type);
     },
   };
@@ -31,7 +31,7 @@ export default function Home() {
           本地文件 MIME 检测，无数据泄漏风险
         </p>
       </Dragger>
-      <div>
+      <div className={styles.result}>
         <span className={styles.label}>文件类型：</span>
         <Paragraph copyable>{type || '未知'}</Paragraph>
       </div>
