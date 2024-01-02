@@ -5,13 +5,16 @@ export default defineConfig({
   // publicPath: '/mime/',
   // base: '.',
   // publicPath: '/mime/',
-  base: '/mime',
+  base: process.env.NODE_ENV === 'production' ? '/mime' : '/',
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   // publicPath: 'https://tanabalu.github.io/mime/',
   routes: [
     { path: "/", component: "./Home" },
     // { path: "/docs", component: "docs" },
   ],
+  codeSplitting: {
+    jsStrategy: 'granularChunks',
+  },
   npmClient: 'npm',
   history: { type: 'hash' },
   hash: true,

@@ -31,10 +31,10 @@ export default function Home() {
           本地文件 MIME 检测，无数据泄漏风险
         </p>
       </Dragger>
-      <p>
+      <div>
         <span className={styles.label}>文件类型：</span>
         <Paragraph copyable>{type || '未知'}</Paragraph>
-      </p>
+      </div>
     </div>
   );
 }
