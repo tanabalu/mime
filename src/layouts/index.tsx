@@ -32,7 +32,7 @@ export default function Layout() {
         </p>
       </Dragger>
       <p>
-        <span style={{ color: '#aaa' }}>文件类型：</span>
+        <span className={styles.label}>文件类型：</span>
         <Paragraph copyable>{type || '未知'}</Paragraph>
       </p>
     </div>
