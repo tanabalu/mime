@@ -13,10 +13,10 @@ export default function Home() {
     name: 'file',
     maxCount: 1,
     className: styles.upload,
-    action: () => Promise.resolve(''),
     beforeUpload(file) {
       console.log('file: ', file);
       setType(file.type);
+      return false;
     },
   };
 
