@@ -6,7 +6,7 @@ export default defineConfig({
   // base: '.',
   // publicPath: '/mime/',
   base: '/mime',
-  publicPath: './',
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   // publicPath: 'https://tanabalu.github.io/mime/',
   routes: [
     { path: "/", component: "./Home" },
